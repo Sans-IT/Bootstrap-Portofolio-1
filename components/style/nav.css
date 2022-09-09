@@ -1,0 +1,153 @@
+body {
+    overflow-x:hidden;
+    height:100vh;
+}
+
+:root {
+    --smoothTrans:0.3s;
+    --spacePage:450px;
+}
+
+/* Object */
+.object-decoration {
+    object-fit: fill;
+}
+.object {
+    overflow-x:hidden;
+    top:-420px;
+    right:-580px !important;
+}
+
+.dot {
+    opacity:50%;
+}
+
+/* Nav */
+.nav-link, 
+.nav-link:hover,
+.nav-link:visited
+{
+    color:rgb(0,160,255);
+} 
+
+/* Content 1 */
+.content1 {
+    margin-top:var(--spacePage);
+}
+
+.porto1 {
+    width: 400px;
+}
+
+/* Content 2 */
+.content2 {
+    margin-top:var(--spacePage);
+}
+
+.panel-info div{
+    width:300px;
+    height:300px;
+}
+
+/* Footer */
+.footer {
+    margin-top:300px;
+    background:#222;
+}
+
+.footer ul li{
+    margin-bottom:5px;
+}
+
+.footer ul li a {
+    color:rgba(255, 255, 255, 0.5);
+    text-decoration:none;
+    transition:var(--smoothTrans);
+} .footer ul li a:hover {
+    color:white;
+    text-decoration:underline
+}
+
+.footer .footer-medsos li {
+    margin:0 20px 50px;
+}
+
+.footer .footer-medsos li a img {
+    transition:var(--smoothTrans);
+}
+
+.footer .footer-medsos li a img:hover {
+    scale:115%;
+}
+
+/* MOBILE MEDIA */
+@media (max-width: 991.98px) {
+    nav,.nav-link, 
+    .nav-link:hover,
+    .nav-link:visited
+    {
+        color:white;
+        background:rgba(0,160,255);
+    }
+
+    .main {
+        margin-top:-60px;
+    }
+
+    .object-decoration,
+    .nav-medsos {
+        display:none;
+    }
+
+    .btn-kontak {
+        margin-top:10px;
+        display:flex;
+        justify-content: center;
+    }
+
+    .profile {
+        position:relative;
+        width: 250px;
+        transition:var(--smoothTrans);
+        cursor:pointer;
+    } .profile:hover {
+        scale:105%;
+    }
+
+    .profileContainer span {
+        margin-top:50px;
+        position:absolute;
+        height: 250px;
+        width:250px;
+        background:rgba(0,0,0,0.5);
+        opacity: 0;
+        cursor:pointer;
+        transition:var(--smoothTrans);
+        transform:scale(0) rotate(0deg);
+    } .profileContainer span:hover {
+        opacity:1; transform:scale(1) rotate(360deg);
+    }
+
+    /* Content */
+    .content1 {
+        margin-top:50px;
+    }
+
+    .porto1 {
+        width:300px;
+        transition: var(--smoothTrans);
+        cursor: pointer;
+        margin:30px 0 60px;
+    } .porto1:hover {
+        scale: 105%;
+    }
+
+    .content2 {
+        margin-top:50px;
+    }
+    /* Footer */
+    .footer {
+        text-align:center;
+        margin-top:150px;
+    }
+}
