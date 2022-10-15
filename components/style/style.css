@@ -134,12 +134,13 @@ body {
     }
 
     .porto1 {
-        width:300px;
+        display:none;
+        /* width:300px;
         transition: var(--smoothTrans);
         cursor: pointer;
         margin:30px 0 60px;
     } .porto1:hover {
-        scale: 105%;
+        scale: 105%; */
     }
 
     .content2 {
